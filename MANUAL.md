@@ -1,50 +1,68 @@
-# Manual de Uso - Linux Memory Training
+# Linux Memory Training - Manual de Uso / User Manual / Manlibro
 
-¡Bienvenido a Linux Memory Training! Este programa te ayudará a mejorar tu capacidad de retención visual de una forma rápida y divertida.
-
-## Índice
-1. [Primeros Pasos](#1-primeros-pasos)
-2. [Configuración del Juego](#2-configuración-del-juego)
-3. [Cómo Jugar](#3-cómo-jugar)
-4. [Gestión de Temas](#4-gestión-de-temas)
-5. [Trucos y Consejos](#5-trucos-y-consejos)
+- [Español](#español)
+- [English](#english)
+- [Esperanto](#esperanto)
 
 ---
 
-## 1. Primeros Pasos
-Para abrir el programa, simplemente haz doble clic en el lanzador **Memory Training** en tu escritorio o ejecuta `npm start` desde la carpeta del proyecto.
+<a name="español"></a>
+## 🇪🇸 Español: Manual de Uso
 
-En la esquina superior izquierda verás tres botones: **ES**, **EO**, **EN**. Úsalos para cambiar el idioma del programa en cualquier momento.
+### 1. Primeros Pasos
+Para abrir el programa, simplemente haz doble clic en el lanzador **Memory Training** en tu escritorio o ejecuta `npm start` desde la carpeta del proyecto. Usa los botones **ES**, **EO**, **EN** en la parte superior izquierda para cambiar el idioma.
 
-## 2. Configuración del Juego
-Antes de empezar, puedes ajustar tres parámetros:
-- **Cajas (Boxes)**: Define cuántas imágenes tendrás que recordar (desde 10 hasta 100).
-- **Tiempo (s)**: El tiempo que tendrás para memorizar las imágenes. Si eliges "Sin Límite", podrás tomarte todo el tiempo que quieras y pulsar el botón cuando estés listo.
-- **Tema**: Elige el tipo de imágenes (por ejemplo, "Animales").
+### 2. Configuración del Juego
+- **Cajas**: Define cuántas imágenes recordar (10-100).
+- **Tiempo**: El tiempo para memorizar. "Sin Límite" te permite pulsar cuando estés listo.
+- **Tema**: Elige el tipo de imágenes.
 
-## 3. Cómo Jugar
-El juego se divide en tres fases:
+### 3. Cómo Jugar
+1. **Fase de Memorización**: Intenta recordar qué imagen hay en cada posición.
+2. **Fase de Selección**: Haz clic en cualquier recuadro vacío y elige la imagen correcta de la ventana que aparecerá.
+3. **Fase de Verificación**: Pulsa **"Comprobar"**. El verde indica acierto y el rojo error.
 
-### Fase 1: Memorización
-Aparecerá una rejilla con las imágenes. Intenta recordar qué imagen hay en cada posición. Verás un cronómetro indicando cuánto tiempo llevas o cuánto te queda.
+### 4. Gestión de Temas
+Crea una nueva carpeta en la carpeta `temas` y añade tus imágenes (`.png`, `.jpg`). El programa la detectará automáticamente.
 
-### Fase 2: Selección
-Las imágenes desaparecerán. Haz clic en cualquier recuadro vacío. Se abrirá una ventana con todas las imágenes posibles para ese tema. Haz clic en la imagen que creas que iba en ese hueco.
+---
 
-### Fase 3: Verificación
-Cuando hayas rellenado los huecos que quieras, pulsa el botón **"Comprobar"**. El programa marcará en verde los aciertos y en rojo los errores. También verás tu puntuación final y cuánto tiempo has tardado en cada fase.
-- Pulsa **"Reiniciar"** para volver a configurar una partida.
+<a name="english"></a>
+## 🇺🇸 English: User Manual
 
-## 4. Gestión de Temas
-Puedes añadir tus propias imágenes al juego de forma muy sencilla:
-1. Ve a la carpeta `temas` dentro de la carpeta del programa.
-2. Crea una nueva carpeta con el nombre que quieras (ej: `espacio`).
-3. Copia tus imágenes favoritas dentro de esa carpeta.
-4. Reinicia el programa y el nuevo tema aparecerá automáticamente.
+### 1. Getting Started
+To open the program, double-click the **Memory Training** launcher on your desktop or run `npm start` from the project folder. Use the **ES**, **EO**, **EN** buttons in the top-left to change the language.
 
-## 5. Trucos y Consejos
-- **Asociación**: Intenta crear una historia mental que conecte las imágenes en orden.
-- **Fragmentación**: Divide la rejilla en bloques pequeños (ej: grupos de 5) para recordarlos mejor.
-- **Práctica constante**: Empieza con 10 cajas y ve subiendo la dificultad poco a poco.
+### 2. Game Configuration
+- **Boxes**: Define how many images to remember (10-100).
+- **Time**: Memorization time. "No Limit" lets you click when ready.
+- **Theme**: Choose the type of images.
 
-¡Diviértete entrenando tu mente!
+### 3. How to Play
+1. **Memorization Phase**: Try to remember which image is in each position.
+2. **Selection Phase**: Click any empty box and choose the correct image from the window that appears.
+3. **Verification Phase**: Press **"Check Results"**. Green indicates success and red indicates an error.
+
+### 4. Theme Management
+Create a new folder in the `temas` folder and add your images (`.png`, `.jpg`). The program will detect it automatically.
+
+---
+
+<a name="esperanto"></a>
+## 🟢 Esperanto: Manlibro
+
+### 1. Komenci
+Por malfermi la programon, duoble alklaku la lanĉilon **Memory Training** sur via labortablo aŭ lanĉu `npm start` el la projekta dosierujo. Uzu la butonojn **ES**, **EO**, **EN** supre maldekstre por ŝanĝi la lingvon.
+
+### 2. Agordo de la Ludo
+- **Kestoj**: Difinu kiom da bildoj memori (10-100).
+- **Tempo**: Memortempo. "Sen Limo" ebligas al vi alklaki kiam vi estas preta.
+- **Temo**: Elektu la specon de bildoj.
+
+### 3. Kiel Ludi
+1. **Memor-fazo**: Provu memori kiun bildon estas en ĉiu pozicio.
+2. **Elekta fazo**: Alklaku iun ajn malplenan skatolon kaj elektu la ĝustan bildon el la fenestro kiu aperos.
+3. **Kontrola fazo**: Premu **"Kontroli"**. Verda indikas sukceson kaj ruĝa indikas eraron.
+
+### 4. Administrado de Temoj
+Kreu novan dosierujon en la dosierujo `temas` kaj aldonu viajn bildojn (`.png`, `.jpg`). La programo detektos ĝin aŭtomate.

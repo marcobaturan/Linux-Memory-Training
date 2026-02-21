@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Memory Training
+Exec=sh -c 'cd "$(dirname "%k")" && npm start'
+Icon=./icon.png
+Terminal=false
+Type=Application
+Categories=Education;Game;
+Comment=Entrenamiento de memoria para Linux (Portable)

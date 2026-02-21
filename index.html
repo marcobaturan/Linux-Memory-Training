@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Memory Training</title>
+    <!-- Linked application styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header: Application Toolbar & Configuration -->
+    <header>
+        <!-- Left: Grid dimension settings -->
+        <div class="controls-left">
+            <label for="box-count">Boxes:</label>
+            <select id="box-count">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="eo">EO</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+
+        <!-- Center: Game Flow controls and Time Limit selection -->
+        <div class="controls-center">
+            <label for="time-limit">Time (s):</label>
+            <select id="time-limit">
+                <option value="5">5s (Quick)</option>
+                <option value="60">60s</option>
+                <option value="120">120s</option>
+                <option value="180">180s</option>
+                <option value="240">240s</option>
+                <option value="300">300s</option>
+                <option value="none">No Limit</option>
+            </select>
+            <button id="start-btn">Start Game</button>
+            <button id="check-btn" class="hidden">Check Results</button>
+            <button id="clear-btn" class="hidden">Reset</button>
+            <div id="live-timer" class="hidden">Time: <span id="timer-val">0.0</span>s</div>
+        </div>
+
+        <!-- Right: Theme selection (Populated dynamically via JS/IPC) -->
+        <div class="controls-right">
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <!-- Subfolders from /temas will be injected here -->
+            </select>
+        </div>
+    </header>
+
+    <!-- Game Viewport: Responsive image grid -->
+    <main id="game-container">
+        <!-- Cells are generated dynamically by app.js -->
+    </main>
+
+    <!-- Score UI: Displayed after validation -->
+    <div id="score-container" class="hidden">
+        <span id="score-text"></span>
+    </div>
+
+    <!-- Selection Overlay: Visual matrix for choosing images -->
+    <div id="selection-overlay" class="hidden">
+        <div class="overlay-content">
+            <h3>Select the corresponding image</h3>
+            <div id="selection-grid"></div>
+            <button id="close-overlay-btn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Core Game Logic -->
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,13 +1,60 @@
 # Linux Memory Training
 
-Una aplicación de escritorio potente e interactiva construida con **Electron** diseñada para entrenar la memoria visual. Este software es **gratuito y de código abierto (Open Source)**.
+- [English](#english)
+- [Español](#español)
+- [Esperanto](#esperanto)
 
-## 🚀 Instalación y Uso
+---
 
-### Prerrequisitos
+<a name="english"></a>
+## 🇺🇸 English
+
+A powerful and interactive desktop application built with **Electron** designed to train visual memory. This software is **free and open-source**.
+
+### 🚀 Installation and Usage
+
+#### Prerequisites
+You must have **Node.js** and **npm** installed on your Linux system.
+
+#### Installation
+1. Download or clone this repository.
+2. Open a terminal in the project folder.
+3. Run the following command to install dependencies:
+   ```bash
+   npm install
+   ```
+
+#### Running
+To launch the program:
+```bash
+npm start
+```
+
+### 🖥️ Desktop Launcher
+
+The project includes a portable launcher called `linux_memory_training.desktop`.
+
+#### How to put it on your desktop:
+1. Ensure the `linux_memory_training.desktop` file is in the project folder.
+2. Copy the file to your desktop folder:
+   ```bash
+   cp linux_memory_training.desktop ~/Desktop/
+   ```
+3. Right-click the file on your desktop and select **"Allow Launching"**.
+
+---
+
+<a name="español"></a>
+## 🇪🇸 Español
+
+Una aplicación de escritorio potente e interactiva construida con **Electron** diseñada para entrenar la memoria visual. Este software es **gratuito y de código abierto**.
+
+### 🚀 Instalación y Uso
+
+#### Prerrequisitos
 Debes tener instalado **Node.js** y **npm** en tu sistema Linux.
 
-### Instalación
+#### Instalación
 1. Descarga o clona este repositorio.
 2. Abre una terminal en la carpeta del proyecto.
 3. Ejecuta el siguiente comando para instalar las dependencias:
@@ -15,57 +62,63 @@ Debes tener instalado **Node.js** y **npm** en tu sistema Linux.
    npm install
    ```
 
-### Ejecución
+#### Ejecución
 Para iniciar el programa:
 ```bash
 npm start
 ```
 
-## 🖥️ Lanzador de Escritorio
+### 🖥️ Lanzador de Escritorio
 
 El proyecto incluye un lanzador portátil llamado `linux_memory_training.desktop`.
 
-### Cómo ponerlo en tu escritorio:
+#### Cómo ponerlo en tu escritorio:
 1. Asegúrate de que el archivo `linux_memory_training.desktop` esté en la carpeta del proyecto.
 2. Copia el archivo a tu carpeta de escritorio:
    ```bash
    cp linux_memory_training.desktop ~/Escritorio/
    ```
-   *(O arrástralo directamente al escritorio)*.
-3. Haz clic derecho sobre el archivo en tu escritorio y selecciona **"Permitir ejecución"** (Allow Launching).
-4. ¡Ya puedes abrir el programa con un solo clic! El lanzador detectará automáticamente la ruta del programa.
-
-## 📖 Instrucciones de Juego
-
-1. **Selección de Idioma**: Haz clic en los botones **ES**, **EO** o **EN** en la parte superior izquierda para cambiar el lenguaje.
-2. **Configuración**: Elige el número de cajas, el tiempo límite y el tema de imágenes.
-3. **Fase de Memorización**: Observa la posición de las imágenes. Si no hay tiempo límite, haz clic en **"Memorizar"** cuando estés listo.
-4. **Fase de Selección**: Haz clic en las celdas vacías y elige la imagen correcta de la matriz que aparecerá.
-5. **Resultados**: Haz clic en **"Comprobar"** para ver tu puntuación y estadísticas de tiempo.
+3. Haz clic derecho sobre el archivo en tu escritorio y selecciona **"Permitir ejecución"**.
 
 ---
 
-## 🛠️ Arquitectura Técnica
+<a name="esperanto"></a>
+## 🟢 Esperanto
 
-### Componentes
-- **main.js**: Proceso principal (lifecycle y acceso a archivos).
-- **preload.js**: Puente de seguridad IPC.
-- **app.js**: Lógica del juego y renderizado.
-- **translations.js**: Diccionario multi-idioma.
-- **styles.css**: Sistema de diseño moderno.
+Potenca kaj interaga labortabla aplikaĵo konstruita per **Electron** dizajnita por trejni vidan memoron. Ĉi tiu programaro estas **senpaga kaj malfermfonta**.
 
-### Estructura
-```text
-/Linux_memory_training
-├── main.js         # Proceso Principal
-├── preload.js      # Puente de seguridad
-├── app.js          # Lógica del juego
-├── translations.js # Traducciones
-├── styles.css      # Estilos
-├── index.html      # Estructura UI
-├── icon.png        # Icono de la aplicación
-└── /temas          # Almacén de temas
+### 🚀 Instalado kaj Uzado
+
+#### Antaŭkondiĉoj
+Vi devas havi **Node.js** kaj **npm** instalitajn en via Linuksa sistemo.
+
+#### Instalado
+1. Elŝutu aŭ klonu ĉi tiun deponejon.
+2. Malfermu terminalon en la projekta dosierujo.
+3. Rulu la jenan komandon por instali dependecojn:
+   ```bash
+   npm install
+   ```
+
+#### Rulado
+Por lanĉi la programon:
+```bash
+npm start
 ```
 
-## 📜 Licencia
-Este proyecto es de código abierto y gratuito para uso personal y educativo.
+### 🖥️ Labortabla Lanĉilo
+
+La projekto inkluzivas porteblan lanĉilon nomatan `linux_memory_training.desktop`.
+
+#### Kiel meti ĝin sur vian labortablon:
+1. Certigu, ke la dosiero `linux_memory_training.desktop` estas en la projekta dosierujo.
+2. Kopiu la dosieron al via labortabla dosierujo:
+   ```bash
+   cp linux_memory_training.desktop ~/Labortablo/
+   ```
+3. Dekstre alklaku la dosieron sur via labortablo kaj elektu **"Permesi Lanĉon"**.
+
+---
+
+## 📜 License
+This project is open-source and free for personal and educational use.

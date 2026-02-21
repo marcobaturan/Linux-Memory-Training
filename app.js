@@ -206,12 +206,35 @@ async function startGame() {
  */
 function updateGridStyles(count) {
     let cols;
-    if (count <= 10) cols = 10;
-    else if (count <= 20) cols = 5;
-    else if (count <= 40) cols = 8;
-    else cols = 10;
+    let cellSize = 100; // Default
 
-    gameContainer.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
+    if (count <= 10) {
+        cols = 10;
+        cellSize = 100;
+    } else if (count <= 20) {
+        cols = 5;
+        cellSize = 100;
+    } else if (count <= 40) {
+        cols = 8;
+        cellSize = 90;
+    } else if (count <= 70) {
+        cols = 10;
+        cellSize = 80;
+    } else {
+        cols = 10;
+        cellSize = 70;
+    }
+
+    gameContainer.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+
+    // Dynamically apply cell size to children for precise control
+    setTimeout(() => {
+        const cells = gameContainer.querySelectorAll('.cell');
+        cells.forEach(cell => {
+            cell.style.width = `${cellSize}px`;
+            cell.style.height = `${cellSize}px`;
+        });
+    }, 0);
 }
 
 /**

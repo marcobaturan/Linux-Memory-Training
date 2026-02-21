@@ -40,7 +40,7 @@ body {
  */
 header {
     background-color: var(--panel-color);
-    padding: 1rem 2rem;
+    padding: 0.4rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +168,9 @@ main {
     border-radius: 10px;
     position: relative;
     width: 100px;
+    /* Default - will be overridden by JS */
     height: 100px;
+    /* Default - will be overridden by JS */
     display: flex;
     justify-content: center;
     align-items: center;
